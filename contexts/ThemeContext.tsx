@@ -10,9 +10,12 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    // This syncs the initial React state with the theme set by the inline script in index.html,
-    // which prevents a flash of the wrong theme.
-    if (typeof window !== 'undefined' && document.documentElement.classList.contains('dark')) {
+    // This logic is now a mirror of the inline script in index.html to ensure consistency.
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+      return storedTheme === 'dark' ? 'dark' : 'light';
+    }
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark';
     }
     return 'light';

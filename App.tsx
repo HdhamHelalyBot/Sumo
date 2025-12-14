@@ -8,8 +8,11 @@ import Home from './pages/Home';
 import LedProducts from './pages/LedProducts';
 import LightingTools from './pages/LightingTools';
 import Contact from './pages/Contact';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 
-export type Page = 'home' | 'led' | 'tools' | 'contact';
+
+export type Page = 'home' | 'led' | 'tools' | 'contact' | 'terms' | 'privacy';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -24,6 +27,10 @@ const App: React.FC = () => {
         return <LightingTools />;
       case 'contact':
         return <Contact />;
+      case 'terms':
+        return <Terms />;
+      case 'privacy':
+        return <Privacy />;
       default:
         return <Home />;
     }
@@ -37,7 +44,7 @@ const App: React.FC = () => {
           <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
             {renderPage()}
           </main>
-          <Footer />
+          <Footer setCurrentPage={setCurrentPage} />
         </div>
       </ThemeProvider>
     </LocalizationProvider>

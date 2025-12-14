@@ -64,6 +64,24 @@ export const translations: Translations = {
     'footer_rights': '© 2024 Sumo Electrical. All rights reserved.',
     'footer_terms': 'Terms & Conditions',
     'footer_privacy': 'Privacy Policy',
+
+    // Terms Page
+    'terms_title': 'Terms & Conditions',
+    'terms_l1_title': '1. Acceptance of Terms',
+    'terms_l1_p1': 'By accessing and using the Sumo Electrical website, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website.',
+    'terms_l2_title': '2. Use of Website',
+    'terms_l2_p1': 'The content on this website is for your general information and use only. It is subject to change without notice. Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense.',
+    'terms_l3_title': '3. Intellectual Property',
+    'terms_l3_p1': 'This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance, and graphics. Reproduction is prohibited other than in accordance with the copyright notice.',
+
+    // Privacy Page
+    'privacy_title': 'Privacy Policy',
+    'privacy_l1_title': '1. Information We Collect',
+    'privacy_l1_p1': 'We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, fill out a form, and in connection with other activities, services, features or resources we make available on our Site.',
+    'privacy_l2_title': '2. How We Use Collected Information',
+    'privacy_l2_p1': 'Sumo Electrical may collect and use Users personal information to improve customer service, personalize user experience, and to send periodic emails regarding their order or other products and services.',
+    'privacy_l3_title': '3. How We Protect Your Information',
+    'privacy_l3_p1': 'We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.',
   },
   ar: {
     // Header
@@ -127,5 +145,23 @@ export const translations: Translations = {
     'footer_rights': '© 2024 سومو للأدوات الكهربائية. جميع الحقوق محفوظة.',
     'footer_terms': 'الأحكام والشروط',
     'footer_privacy': 'سياسة الخصوصية',
+
+    // Terms Page
+    'terms_title': 'الأحكام والشروط',
+    'terms_l1_title': '1. قبول الشروط',
+    'terms_l1_p1': 'من خلال الوصول إلى موقع سومو للأدوات الكهربائية واستخدامه، فإنك توافق على الالتزام بهذه الشروط والأحكام. إذا كنت لا توافق على أي جزء من هذه الشروط، يجب عليك عدم استخدام موقعنا.',
+    'terms_l2_title': '2. استخدام الموقع',
+    'terms_l2_p1': 'المحتوى الموجود على هذا الموقع هو لمعلوماتك العامة واستخدامك فقط. وهو عرضة للتغيير دون إشعار. قد يؤدي الاستخدام غير المصرح به لهذا الموقع إلى مطالبة بالتعويض عن الأضرار و/أو يعتبر جريمة جنائية.',
+    'terms_l3_title': '3. الملكية الفكرية',
+    'terms_l3_p1': 'يحتوي هذا الموقع على مواد مملوكة لنا أو مرخصة لنا. تشمل هذه المواد، على سبيل المثال لا الحصر، التصميم والتخطيط والمظهر والرسومات. يحظر إعادة الإنتاج إلا وفقًا لإشعار حقوق النشر.',
+    
+    // Privacy Page
+    'privacy_title': 'سياسة الخصوصية',
+    'privacy_l1_title': '1. المعلومات التي نجمعها',
+    'privacy_l1_p1': 'قد نقوم بجمع معلومات التعريف الشخصية من المستخدمين بعدة طرق، بما في ذلك، على سبيل المثال لا الحصر، عندما يزور المستخدمون موقعنا، أو يملؤون نموذجًا، وفيما يتعلق بالأنشطة والخدمات والميزات أو الموارد الأخرى التي نوفرها على موقعنا.',
+    'privacy_l2_title': '2. كيف نستخدم المعلومات المجمعة',
+    'privacy_l2_p1': 'قد تقوم سومو للأدوات الكهربائية بجمع واستخدام المعلومات الشخصية للمستخدمين لتحسين خدمة العملاء، وتخصيص تجربة المستخدم، وإرسال رسائل بريد إلكتروني دورية بخصوص طلباتهم أو منتجات وخدمات أخرى.',
+    'privacy_l3_title': '3. كيف نحمي معلوماتك',
+    'privacy_l3_p1': 'نحن نعتمد ممارسات مناسبة لجمع البيانات وتخزينها ومعالجتها وتدابير أمنية للحماية من الوصول غير المصرح به أو التغيير أو الكشف أو إتلاف معلوماتك الشخصية واسم المستخدم وكلمة المرور ومعلومات المعاملات والبيانات المخزنة على موقعنا.',
   }
 };

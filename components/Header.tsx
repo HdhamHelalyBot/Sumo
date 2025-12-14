@@ -40,7 +40,6 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   currentPage === page
                     ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200'
-                    // FIX: Replaced subtraction operator `-` with ternary operator `:`.
                     : 'text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700'
                 }`}
               >
@@ -67,7 +66,6 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 className={`flex-1 text-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   currentPage === page
                     ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200'
-                    // FIX: Replaced subtraction operator `-` with ternary operator `:`.
                     : 'text-gray-600 dark:text-gray-300'
                 }`}
               >

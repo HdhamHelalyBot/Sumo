@@ -1,8 +1,13 @@
 
 import React from 'react';
 import { useLocalization } from '../contexts/LocalizationContext';
+import type { Page } from '../App';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  setCurrentPage: (page: Page) => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
   const { t } = useLocalization();
 
   return (
@@ -11,8 +16,8 @@ const Footer: React.FC = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400">
           <p className="mb-4 sm:mb-0">{t('footer_rights')}</p>
           <div className="flex space-x-4 rtl:space-x-reverse">
-            <a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer_terms')}</a>
-            <a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer_privacy')}</a>
+            <button onClick={() => setCurrentPage('terms')} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer_terms')}</button>
+            <button onClick={() => setCurrentPage('privacy')} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer_privacy')}</button>
           </div>
         </div>
       </div>
