@@ -30,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-blue-600 dark:text-blue-400">SUMO</h1>
+            <h1 className="text-2xl font-bold text-green-600 dark:text-green-400">SUMO</h1>
           </div>
           <nav className="hidden md:flex items-center space-x-2 lg:space-x-4">
             {navLinks.map(({ page, labelKey }) => (
@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 onClick={() => setCurrentPage(page)}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   currentPage === page
-                    ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200'
+                    ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200'
                     : 'text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700'
                 }`}
               >
@@ -65,7 +65,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 onClick={() => setCurrentPage(page)}
                 className={`flex-1 text-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   currentPage === page
-                    ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200'
+                    ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200'
                     : 'text-gray-600 dark:text-gray-300'
                 }`}
               >

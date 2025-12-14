@@ -8,6 +8,11 @@
     <title>Sumo Electrical Tools</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <script>
       // Apply dark mode immediately to prevent flash of light mode
       if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')

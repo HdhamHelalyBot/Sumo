@@ -5,7 +5,7 @@ import { LocationIcon, PhoneIcon, MailIcon, ClockIcon } from '../components/Icon
 
 const ContactInfoItem: React.FC<{ icon: React.ReactNode; title: string; detail: string }> = ({ icon, title, detail }) => (
   <div className="flex items-start space-x-4 rtl:space-x-reverse">
-    <div className="flex-shrink-0 text-blue-500 dark:text-blue-400 mt-1">
+    <div className="flex-shrink-0 text-green-500 dark:text-green-400 mt-1">
       {icon}
     </div>
     <div>
