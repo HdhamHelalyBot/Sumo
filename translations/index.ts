@@ -8,6 +8,7 @@ export const translations: Translations = {
     'nav_led': 'LED Products',
     'nav_tools': 'Lighting Tools',
     'nav_contact': 'Contact Us',
+    'nav_login': 'Login',
     'toggle_theme': 'Toggle Theme',
     'toggle_language': 'Switch to Arabic',
     
@@ -60,6 +61,16 @@ export const translations: Translations = {
     'contact_hours': 'Working Hours',
     'contact_hours_detail': 'Sunday - Thursday, 9:00 AM - 9:00 PM',
 
+    // Login Page
+    'login_title': 'Welcome Back',
+    'login_subtitle': 'Please enter your credentials to access your account.',
+    'login_email_label': 'Email Address',
+    'login_password_label': 'Password',
+    'login_button': 'Sign In',
+    'login_forgot': 'Forgot Password?',
+    'login_no_account': "Don't have an account?",
+    'login_signup': 'Sign Up',
+
     // Footer
     'footer_rights': '© 2024 Sumo Electrical. All rights reserved.',
     'footer_terms': 'Terms & Conditions',
@@ -89,6 +100,7 @@ export const translations: Translations = {
     'nav_led': 'منتجات LED',
     'nav_tools': 'أدوات الإضاءة',
     'nav_contact': 'تواصل معنا',
+    'nav_login': 'دخول',
     'toggle_theme': 'تغيير المظهر',
     'toggle_language': 'Switch to English',
 
@@ -140,6 +152,16 @@ export const translations: Translations = {
     'contact_email_detail': 'info@sumo-electric.com',
     'contact_hours': 'ساعات العمل',
     'contact_hours_detail': 'الأحد - الخميس، 9:00 صباحًا - 9:00 مساءً',
+
+    // Login Page
+    'login_title': 'مرحباً بعودتك',
+    'login_subtitle': 'يرجى إدخال بياناتك للوصول إلى حسابك.',
+    'login_email_label': 'البريد الإلكتروني',
+    'login_password_label': 'كلمة المرور',
+    'login_button': 'تسجيل الدخول',
+    'login_forgot': 'نسيت كلمة المرور؟',
+    'login_no_account': 'ليس لديك حساب؟',
+    'login_signup': 'إنشاء حساب جديد',
 
     // Footer
     'footer_rights': '© 2024 سومو للأدوات الكهربائية. جميع الحقوق محفوظة.',

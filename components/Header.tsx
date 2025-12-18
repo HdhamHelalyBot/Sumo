@@ -23,6 +23,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
     { page: 'led', labelKey: 'nav_led' },
     { page: 'tools', labelKey: 'nav_tools' },
     { page: 'contact', labelKey: 'nav_contact' },
+    { page: 'login', labelKey: 'nav_login' },
   ];
 
   return (
@@ -58,12 +59,12 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
         </div>
       </div>
       {/* Mobile Nav */}
-      <nav className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 flex justify-around p-2">
+      <nav className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 flex justify-around p-2 overflow-x-auto">
          {navLinks.map(({ page, labelKey }) => (
               <button
                 key={page}
                 onClick={() => setCurrentPage(page)}
-                className={`flex-1 text-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                className={`flex-none text-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   currentPage === page
                     ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200'
                     : 'text-gray-600 dark:text-gray-300'

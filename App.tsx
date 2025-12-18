@@ -10,9 +10,10 @@ import LightingTools from './pages/LightingTools';
 import Contact from './pages/Contact';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
+import Login from './pages/Login';
 
 
-export type Page = 'home' | 'led' | 'tools' | 'contact' | 'terms' | 'privacy';
+export type Page = 'home' | 'led' | 'tools' | 'contact' | 'terms' | 'privacy' | 'login';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -31,6 +32,8 @@ const App: React.FC = () => {
         return <Terms />;
       case 'privacy':
         return <Privacy />;
+      case 'login':
+        return <Login />;
       default:
         return <Home />;
     }
