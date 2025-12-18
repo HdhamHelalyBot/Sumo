@@ -16,12 +16,16 @@ const Login: React.FC = () => {
 
   return (
     <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8 bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl transition-colors duration-300">
-        <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white">
+      <div className="max-w-md w-full space-y-8 bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl transition-colors duration-300 border border-gray-100 dark:border-gray-700">
+        <div className="text-center">
+          {/* Company Branding */}
+          <h1 className="text-5xl font-black text-green-600 dark:text-green-400 mb-2 tracking-tighter">
+            SUMO
+          </h1>
+          <h2 className="mt-4 text-2xl font-bold text-gray-900 dark:text-white">
             {t('login_title')}
           </h2>
-          <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
             {t('login_subtitle')}
           </p>
         </div>
@@ -94,13 +98,13 @@ const Login: React.FC = () => {
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors"
+              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors shadow-lg shadow-green-500/20"
             >
               {t('login_button')}
             </button>
           </div>
         </form>
-        <div className="text-center text-sm text-gray-600 dark:text-gray-400">
+        <div className="text-center text-sm text-gray-600 dark:text-gray-400 pt-4 border-t border-gray-100 dark:border-gray-700">
           <span>{t('login_no_account')} </span>
           <button className="font-medium text-green-600 hover:text-green-500 dark:text-green-400">
             {t('login_signup')}
