@@ -16,7 +16,8 @@ import Login from './pages/Login';
 export type Page = 'home' | 'led' | 'tools' | 'contact' | 'terms' | 'privacy' | 'login';
 
 const App: React.FC = () => {
-  const [currentPage, setCurrentPage] = useState<Page>('home');
+  // Changed initial state from 'home' to 'login'
+  const [currentPage, setCurrentPage] = useState<Page>('login');
 
   const renderPage = useCallback(() => {
     switch (currentPage) {
